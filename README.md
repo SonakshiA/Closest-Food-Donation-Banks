@@ -17,4 +17,8 @@ Additionally, users can view the shortest route from their input PIN code to the
 # Demo
 [Watch Here!](https://drive.google.com/file/d/10tb9TH09Bqc6VIQC0pUL8xqvMZt8ifTa/view?usp=sharing)
 
+# Using the Project
+1. Ensure you have flask, osmnx, networkx, and geopy installed.
+2. Use python form.py to run the flask application.
+
 Feel free to fork this repo and add more features/contribute towards curating the dataset for Food Banks for different cities :D
