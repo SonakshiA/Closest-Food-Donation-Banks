@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <style>
+        .loader {
+            display: none;
+        }
+    </style>
+    <title>Charitable Organizations</title>
+</head>
+<body>
+    <h2>List of Food Donation Banks Near You</h2>
+    <div class="table-container">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Foundation Name</th>
+                    <th>Distance from Source</th>
+                    <th>Contact Number</th>
+                    <th>Address</th>
+                    <th>Shortest Route</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for org in organizations %}
+                <tr>
+                    <td>{{ org[0] }}</td>
+                    <td>{{ org[3] }} km</td>
+                    <td>{{ org[4] }}</td>
+                    <td>{{ org[5] }}</td>
+                    <td>
+                        <form id="pathForm" action="{{ url_for("shortest_path")}}" method="POST" onsubmit="showLoader(this)">
+                            <input type="hidden" name="name" value="{{ org[0]}}">
+                            <input type="hidden" name="lat" value="{{ org[1] }}">
+                            <input type="hidden" name="lon" value="{{ org[2] }}">
+                            <input type="hidden" name="dist" value="{{ org[3] }}">
+                            <input id="smallest_route" class="btn btn-primary" type="submit" name="action" value="Show Smallest Route">
+                            <div class="d-flex justify-content-center">
+                                <div id="loader" class="spinner-border text-primary loader" style="margin-top: 30px;" role="status">
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+       function showLoader(form) {
+            const loader = form.querySelector('.loader'); // Get the loader in the submitted form
+            loader.style.display = 'block'; // Show loader
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_71538accd799340c322cdad46516dce8 {
+                    position: relative;
+                    width: 1200.0px;
+                    height: 800.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_71538accd799340c322cdad46516dce8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_71538accd799340c322cdad46516dce8 = L.map(
+                "map_71538accd799340c322cdad46516dce8",
+                {
+                    center: [19.076751515384615, 73.00219837307692],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1fb8debfdcbdb73b2db39ed011c644c3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1fb8debfdcbdb73b2db39ed011c644c3.addTo(map_71538accd799340c322cdad46516dce8);
+        
+    
+            var marker_bd270728781fe06675a0b59b74d50be7 = L.marker(
+                [19.076751515384615, 73.00219837307692],
+                {}
+            ).addTo(map_71538accd799340c322cdad46516dce8);
+        
+    
+            var icon_f28490287c22846ed145e6afa12eee42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd270728781fe06675a0b59b74d50be7.setIcon(icon_f28490287c22846ed145e6afa12eee42);
+        
+    
+        var popup_7c788de0ed1d31a3cbb39e6c1a401dfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_842c9b1db64b0b4f81c901f724ff1ba7 = $(`<div id="html_842c9b1db64b0b4f81c901f724ff1ba7" style="width: 100.0%; height: 100.0%;">Source</div>`)[0];
+                popup_7c788de0ed1d31a3cbb39e6c1a401dfb.setContent(html_842c9b1db64b0b4f81c901f724ff1ba7);
+            
+        
+
+        marker_bd270728781fe06675a0b59b74d50be7.bindPopup(popup_7c788de0ed1d31a3cbb39e6c1a401dfb)
+        ;
+
+        
+    
+    
+            tile_layer_1fb8debfdcbdb73b2db39ed011c644c3.addTo(map_71538accd799340c322cdad46516dce8);
+        
+    
+            var marker_513cfd3174d736b32ac1e2f9cc52f7f0 = L.marker(
+                [19.08938301, 73.0089819],
+                {}
+            ).addTo(map_71538accd799340c322cdad46516dce8);
+        
+    
+        var popup_e083032b38fbb09f1698bf0b619df421 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b43e2ebe651cfab9767a3b86789b487 = $(`<div id="html_2b43e2ebe651cfab9767a3b86789b487" style="width: 100.0%; height: 100.0%;">The Kanchan Foundation 1.57 km</div>`)[0];
+                popup_e083032b38fbb09f1698bf0b619df421.setContent(html_2b43e2ebe651cfab9767a3b86789b487);
+            
+        
+
+        marker_513cfd3174d736b32ac1e2f9cc52f7f0.bindPopup(popup_e083032b38fbb09f1698bf0b619df421)
+        ;
+
+        
+    
+    
+            var marker_a4ababd0ea61461583b3b04017790f4a = L.marker(
+                [19.06337321, 73.00763301],
+                {}
+            ).addTo(map_71538accd799340c322cdad46516dce8);
+        
+    
+        var popup_ddd5e20c0682157b7a74ace336ba6d73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91b69f3d1b691fbc4a39491c04dab8f6 = $(`<div id="html_91b69f3d1b691fbc4a39491c04dab8f6" style="width: 100.0%; height: 100.0%;">Vatsalya Trust Mumbai 1.59 km</div>`)[0];
+                popup_ddd5e20c0682157b7a74ace336ba6d73.setContent(html_91b69f3d1b691fbc4a39491c04dab8f6);
+            
+        
+
+        marker_a4ababd0ea61461583b3b04017790f4a.bindPopup(popup_ddd5e20c0682157b7a74ace336ba6d73)
+        ;
+
+        
+    
+    
+            var marker_e34461f0ed9e71dc59f6ebf923db0706 = L.marker(
+                [19.09162858, 73.00573645],
+                {}
+            ).addTo(map_71538accd799340c322cdad46516dce8);
+        
+    
+        var popup_59b78a5ffd472a3ab7f9b93b4dccd5e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92f298a63715275f7f8a303bfa86ca40 = $(`<div id="html_92f298a63715275f7f8a303bfa86ca40" style="width: 100.0%; height: 100.0%;">Navi Mumbai First Charitable Trust 1.69 km</div>`)[0];
+                popup_59b78a5ffd472a3ab7f9b93b4dccd5e3.setContent(html_92f298a63715275f7f8a303bfa86ca40);
+            
+        
+
+        marker_e34461f0ed9e71dc59f6ebf923db0706.bindPopup(popup_59b78a5ffd472a3ab7f9b93b4dccd5e3)
+        ;
+
+        
+    
+    
+            var marker_eb8283c16f2d2223c985310d477069ae = L.marker(
+                [19.06997213, 73.0721859],
+                {}
+            ).addTo(map_71538accd799340c322cdad46516dce8);
+        
+    
+        var popup_23fa63bc679c64dea15e18df21918ebc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e475559fcd3c0fe57180653e76a90ba = $(`<div id="html_7e475559fcd3c0fe57180653e76a90ba" style="width: 100.0%; height: 100.0%;">Mangalam Foundation 7.4 km</div>`)[0];
+                popup_23fa63bc679c64dea15e18df21918ebc.setContent(html_7e475559fcd3c0fe57180653e76a90ba);
+            
+        
+
+        marker_eb8283c16f2d2223c985310d477069ae.bindPopup(popup_23fa63bc679c64dea15e18df21918ebc)
+        ;
+
+        
+    
+    
+            var marker_562410367ca004c1d17a8a50883a3109 = L.marker(
+                [19.01151251, 73.11441254],
+                {}
+            ).addTo(map_71538accd799340c322cdad46516dce8);
+        
+    
+        var popup_b1e5f29245b9c5cae089b9fd56df8c2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18f9d6fd57adab7a93110171f7c88edc = $(`<div id="html_18f9d6fd57adab7a93110171f7c88edc" style="width: 100.0%; height: 100.0%;">Sukarma Charitable Trust 13.84 km</div>`)[0];
+                popup_b1e5f29245b9c5cae089b9fd56df8c2a.setContent(html_18f9d6fd57adab7a93110171f7c88edc);
+            
+        
+
+        marker_562410367ca004c1d17a8a50883a3109.bindPopup(popup_b1e5f29245b9c5cae089b9fd56df8c2a)
+        ;
+
+        
+    
+</script>
+</html>
